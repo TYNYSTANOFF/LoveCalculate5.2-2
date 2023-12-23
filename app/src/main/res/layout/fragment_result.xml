@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.ResultFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="48dp"
+        android:id="@+id/tv_percentage"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="00%" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="48dp"
+        android:id="@+id/tv_result"
+        android:layout_height="wrap_content"
+        android:text="U can find" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="48dp"
+        android:id="@+id/tv_firstName"
+        android:layout_height="wrap_content"
+        android:text="JonBabijon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="48dp"
+        android:id="@+id/tv_secondName"
+        android:layout_height="wrap_content"
+        android:text="Sara" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_tryagain"
+        android:text="try again"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

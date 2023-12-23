@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/parameterFragment">
+
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.lovecalculate52_2.view.fragments.ResultFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/parameterFragment"
+        android:name="com.example.lovecalculate52_2.view.fragments.ParameterFragment"
+        android:label="Parameter"
+        tools:layout="@layout/fragment_parameter" >
+        <action
+            android:id="@+id/action_parameterFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.lovecalculate52_2.view.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.example.lovecalculate52_2.view.board.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" >
+        <action
+            android:id="@+id/action_boardFragment_to_parameterFragment"
+            app:destination="@id/parameterFragment" />
+    </fragment>
+
+
+</navigation>
